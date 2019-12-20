@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<title>Awesome Catering</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="http://foodcuration.org/wp-content/uploads/2016/05/food-curation-favicon-5-1.png" type="image/x-icon">
+<style>
+    body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+/* bm.CSS 4.13 June 2019 by Jan Egil and Borge Refsnes */
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
+audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
+audio:not([controls]){display:none;height:0}[hidden],template{display:none}
+a{background-color:transparent}a:active,a:hover{outline-width:0}
+abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+b,strong{font-weight:bolder}dfn{font-style:italic}mark{background:#ff0;color:#000}
+small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}
+button,input,select,textarea,optgroup{font:inherit;margin:0}optgroup{font-weight:bold}
+button,input{overflow:visible}button,select{text-transform:none}
+button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}
+button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}
+button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}
+[type=checkbox],[type=radio]{padding:0}
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
+[type=search]{-webkit-appearance:textfield;outline-offset:-2px}
+[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+/* End extract */
+html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}.bm-serif{font-family:serif}
+h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.bm-wide{letter-spacing:4px}
+hr{border:0;border-top:1px solid #eee;margin:20px 0}
+.bm-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
+.bm-table,.bm-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.bm-table-all{border:1px solid #ccc}
+.bm-bordered tr,.bm-table-all tr{border-bottom:1px solid #ddd}.bm-striped tbody tr:nth-child(even){background-color:#f1f1f1}
+.bm-table-all tr:nth-child(odd){background-color:#fff}.bm-table-all tr:nth-child(even){background-color:#f1f1f1}
+.bm-hoverable tbody tr:hover,.bm-ul.bm-hoverable li:hover{background-color:#ccc}.bm-centered tr th,.bm-centered tr td{text-align:center}
+.bm-table td,.bm-table th,.bm-table-all td,.bm-table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
+.bm-table th:first-child,.bm-table td:first-child,.bm-table-all th:first-child,.bm-table-all td:first-child{padding-left:16px}
+.bm-btn,.bm-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.bm-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+.bm-btn,.bm-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
+.bm-disabled,.bm-btn:disabled,.bm-button:disabled{cursor:not-allowed;opacity:0.3}.bm-disabled *,:disabled *{pointer-events:none}
+.bm-btn.bm-disabled:hover,.bm-btn:disabled:hover{box-shadow:none}
+.bm-badge,.bm-tag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}.bm-badge{border-radius:50%}
+.bm-ul{list-style-type:none;padding:0;margin:0}.bm-ul li{padding:8px 16px;border-bottom:1px solid #ddd}.bm-ul li:last-child{border-bottom:none}
+.bm-tooltip,.bm-display-container{position:relative}.bm-tooltip .bm-text{display:none}.bm-tooltip:hover .bm-text{display:inline-block}
+.bm-ripple:active{opacity:0.5}.bm-ripple{transition:opacity 0s}
+.bm-input{padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}
+.bm-select{padding:9px 0;width:100%;border:none;border-bottom:1px solid #ccc}
+.bm-dropdown-click,.bm-dropdown-hover{position:relative;display:inline-block;cursor:pointer}
+.bm-dropdown-hover:hover .bm-dropdown-content{display:block}
+.bm-dropdown-hover:first-child,.bm-dropdown-click:hover{background-color:#ccc;color:#000}
+.bm-dropdown-hover:hover > .bm-button:first-child,.bm-dropdown-click:hover > .bm-button:first-child{background-color:#ccc;color:#000}
+.bm-dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1}
+.bm-check,.bm-radio{width:24px;height:24px;position:relative;top:6px}
+.bm-sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
+.bm-bar-block .bm-dropdown-hover,.bm-bar-block .bm-dropdown-click{width:100%}
+.bm-bar-block .bm-dropdown-hover .bm-dropdown-content,.bm-bar-block .bm-dropdown-click .bm-dropdown-content{min-width:100%}
+.bm-bar-block .bm-dropdown-hover .bm-button,.bm-bar-block .bm-dropdown-click .bm-button{width:100%;text-align:left;padding:8px 16px}
+.bm-main,#main{transition:margin-left .4s}
+.bm-modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
+.bm-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
+.bm-bar{width:100%;overflow:hidden}.bm-center .bm-bar{display:inline-block;width:auto}
+.bm-bar .bm-bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+.bm-bar .bm-dropdown-hover,.bm-bar .bm-dropdown-click{position:static;float:left}
+.bm-bar .bm-button{white-space:normal}
+.bm-bar-block .bm-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.bm-bar-block.bm-center .bm-bar-item{text-align:center}.bm-block{display:block;width:100%}
+.bm-responsive{display:block;overflow-x:auto}
+.bm-container:after,.bm-container:before,.bm-panel:after,.bm-panel:before,.bm-row:after,.bm-row:before,.bm-row-padding:after,.bm-row-padding:before,
+.bm-cell-row:before,.bm-cell-row:after,.bm-clear:after,.bm-clear:before,.bm-bar:before,.bm-bar:after{content:"";display:table;clear:both}
+.bm-col,.bm-half,.bm-third,.bm-twothird,.bm-threequarter,.bm-quarter{float:left;width:100%}
+.bm-col.s1{width:8.33333%}.bm-col.s2{width:16.66666%}.bm-col.s3{width:24.99999%}.bm-col.s4{width:33.33333%}
+.bm-col.s5{width:41.66666%}.bm-col.s6{width:49.99999%}.bm-col.s7{width:58.33333%}.bm-col.s8{width:66.66666%}
+.bm-col.s9{width:74.99999%}.bm-col.s10{width:83.33333%}.bm-col.s11{width:91.66666%}.bm-col.s12{width:99.99999%}
+@media (min-width:601px){.bm-col.m1{width:8.33333%}.bm-col.m2{width:16.66666%}.bm-col.m3,.bm-quarter{width:24.99999%}.bm-col.m4,.bm-third{width:33.33333%}
+.bm-col.m5{width:41.66666%}.bm-col.m6,.bm-half{width:49.99999%}.bm-col.m7{width:58.33333%}.bm-col.m8,.bm-twothird{width:66.66666%}
+.bm-col.m9,.bm-threequarter{width:74.99999%}.bm-col.m10{width:83.33333%}.bm-col.m11{width:91.66666%}.bm-col.m12{width:99.99999%}}
+@media (min-width:993px){.bm-col.l1{width:8.33333%}.bm-col.l2{width:16.66666%}.bm-col.l3{width:24.99999%}.bm-col.l4{width:33.33333%}
+.bm-col.l5{width:41.66666%}.bm-col.l6{width:49.99999%}.bm-col.l7{width:58.33333%}.bm-col.l8{width:66.66666%}
+.bm-col.l9{width:74.99999%}.bm-col.l10{width:83.33333%}.bm-col.l11{width:91.66666%}.bm-col.l12{width:99.99999%}}
+.bm-rest{overflow:hidden}.bm-stretch{margin-left:-16px;margin-right:-16px}
+.bm-content,.bm-auto{margin-left:auto;margin-right:auto}.bm-content{max-width:980px}.bm-auto{max-width:1140px}
+.bm-cell-row{display:table;width:100%}.bm-cell{display:table-cell}
+.bm-cell-top{vertical-align:top}.bm-cell-middle{vertical-align:middle}.bm-cell-bottom{vertical-align:bottom}
+.bm-hide{display:none!important}.bm-show-block,.bm-show{display:block!important}.bm-show-inline-block{display:inline-block!important}
+@media (max-width:1205px){.bm-auto{max-width:95%}}
+@media (max-width:600px){.bm-modal-content{margin:0 10px;width:auto!important}.bm-modal{padding-top:30px}
+.bm-dropdown-hover.bm-mobile .bm-dropdown-content,.bm-dropdown-click.bm-mobile .bm-dropdown-content{position:relative}  
+.bm-hide-small{display:none!important}.bm-mobile{display:block;width:100%!important}.bm-bar-item.bm-mobile,.bm-dropdown-hover.bm-mobile,.bm-dropdown-click.bm-mobile{text-align:center}
+.bm-dropdown-hover.bm-mobile,.bm-dropdown-hover.bm-mobile .bm-btn,.bm-dropdown-hover.bm-mobile .bm-button,.bm-dropdown-click.bm-mobile,.bm-dropdown-click.bm-mobile .bm-btn,.bm-dropdown-click.bm-mobile .bm-button{width:100%}}
+@media (max-width:768px){.bm-modal-content{width:500px}.bm-modal{padding-top:50px}}
+@media (min-width:993px){.bm-modal-content{width:900px}.bm-hide-large{display:none!important}.bm-sidebar.bm-collapse{display:block!important}}
+@media (max-width:992px) and (min-width:601px){.bm-hide-medium{display:none!important}}
+@media (max-width:992px){.bm-sidebar.bm-collapse{display:none}.bm-main{margin-left:0!important;margin-right:0!important}.bm-auto{max-width:100%}}
+.bm-top,.bm-bottom{position:fixed;width:100%;z-index:1}.bm-top{top:0}.bm-bottom{bottom:0}
+.bm-overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
+.bm-display-topleft{position:absolute;left:0;top:0}.bm-display-topright{position:absolute;right:0;top:0}
+.bm-display-bottomleft{position:absolute;left:0;bottom:0}.bm-display-bottomright{position:absolute;right:0;bottom:0}
+.bm-display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.bm-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.bm-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+.bm-display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.bm-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.bm-display-container:hover .bm-display-hover{display:block}.bm-display-container:hover span.bm-display-hover{display:inline-block}.bm-display-hover{display:none}
+.bm-display-position{position:absolute}
+.bm-circle{border-radius:50%}
+.bm-round-small{border-radius:2px}.bm-round,.bm-round-medium{border-radius:4px}.bm-round-large{border-radius:8px}.bm-round-xlarge{border-radius:16px}.bm-round-xxlarge{border-radius:32px}
+.bm-row-padding,.bm-row-padding>.bm-half,.bm-row-padding>.bm-third,.bm-row-padding>.bm-twothird,.bm-row-padding>.bm-threequarter,.bm-row-padding>.bm-quarter,.bm-row-padding>.bm-col{padding:0 8px}
+.bm-container,.bm-panel{padding:0.01em 16px}.bm-panel{margin-top:16px;margin-bottom:16px}
+.bm-code,.bm-codespan{font-family:Consolas,"courier new";font-size:16px}
+.bm-code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
+.bm-codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
+.bm-card,.bm-card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+.bm-card-4,.bm-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
+.bm-spin{animation:bm-spin 2s infinite linear}@keyframes bm-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+.bm-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.bm-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.bm-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.bm-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.bm-animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.bm-animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.bm-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.bm-animate-input{transition:width 0.4s ease-in-out}.bm-animate-input:focus{width:100%!important}
+.bm-opacity,.bm-hover-opacity:hover{opacity:0.60}.bm-opacity-off,.bm-hover-opacity-off:hover{opacity:1}
+.bm-opacity-max{opacity:0.25}.bm-opacity-min{opacity:0.75}
+.bm-greyscale-max,.bm-grayscale-max,.bm-hover-greyscale:hover,.bm-hover-grayscale:hover{filter:grayscale(100%)}
+.bm-greyscale,.bm-grayscale{filter:grayscale(75%)}.bm-greyscale-min,.bm-grayscale-min{filter:grayscale(50%)}
+.bm-sepia{filter:sepia(75%)}.bm-sepia-max,.bm-hover-sepia:hover{filter:sepia(100%)}.bm-sepia-min{filter:sepia(50%)}
+.bm-tiny{font-size:10px!important}.bm-small{font-size:12px!important}.bm-medium{font-size:15px!important}.bm-large{font-size:18px!important}
+.bm-xlarge{font-size:24px!important}.bm-xxlarge{font-size:36px!important}.bm-xxxlarge{font-size:48px!important}.bm-jumbo{font-size:64px!important}
+.bm-left-align{text-align:left!important}.bm-right-align{text-align:right!important}.bm-justify{text-align:justify!important}.bm-center{text-align:center!important}
+.bm-border-0{border:0!important}.bm-border{border:1px solid #ccc!important}
+.bm-border-top{border-top:1px solid #ccc!important}.bm-border-bottom{border-bottom:1px solid #ccc!important}
+.bm-border-left{border-left:1px solid #ccc!important}.bm-border-right{border-right:1px solid #ccc!important}
+.bm-topbar{border-top:6px solid #ccc!important}.bm-bottombar{border-bottom:6px solid #ccc!important}
+.bm-leftbar{border-left:6px solid #ccc!important}.bm-rightbar{border-right:6px solid #ccc!important}
+.bm-section,.bm-code{margin-top:16px!important;margin-bottom:16px!important}
+.bm-margin{margin:16px!important}.bm-margin-top{margin-top:16px!important}.bm-margin-bottom{margin-bottom:16px!important}
+.bm-margin-left{margin-left:16px!important}.bm-margin-right{margin-right:16px!important}
+.bm-padding-small{padding:4px 8px!important}.bm-padding{padding:8px 16px!important}.bm-padding-large{padding:12px 24px!important}
+.bm-padding-16{padding-top:16px!important;padding-bottom:16px!important}.bm-padding-24{padding-top:24px!important;padding-bottom:24px!important}
+.bm-padding-32{padding-top:32px!important;padding-bottom:32px!important}.bm-padding-48{padding-top:48px!important;padding-bottom:48px!important}
+.bm-padding-64{padding-top:64px!important;padding-bottom:64px!important}
+.bm-left{float:left!important}.bm-right{float:right!important}
+.bm-button:hover{color:#000!important;background-color:#ccc!important}
+.bm-transparent,.bm-hover-none:hover{background-color:transparent!important}
+.bm-hover-none:hover{box-shadow:none!important}
+/* Colors */
+.bm-amber,.bm-hover-amber:hover{color:#000!important;background-color:#ffc107!important}
+.bm-aqua,.bm-hover-aqua:hover{color:#000!important;background-color:#00ffff!important}
+.bm-blue,.bm-hover-blue:hover{color:#fff!important;background-color:#2196F3!important}
+.bm-light-blue,.bm-hover-light-blue:hover{color:#000!important;background-color:#87CEEB!important}
+.bm-brown,.bm-hover-brown:hover{color:#fff!important;background-color:#795548!important}
+.bm-cyan,.bm-hover-cyan:hover{color:#000!important;background-color:#00bcd4!important}
+.bm-blue-grey,.bm-hover-blue-grey:hover,.bm-blue-gray,.bm-hover-blue-gray:hover{color:#fff!important;background-color:#607d8b!important}
+.bm-green,.bm-hover-green:hover{color:#fff!important;background-color:#4CAF50!important}
+.bm-light-green,.bm-hover-light-green:hover{color:#000!important;background-color:#8bc34a!important}
+.bm-indigo,.bm-hover-indigo:hover{color:#fff!important;background-color:#3f51b5!important}
+.bm-khaki,.bm-hover-khaki:hover{color:#000!important;background-color:#f0e68c!important}
+.bm-lime,.bm-hover-lime:hover{color:#000!important;background-color:#cddc39!important}
+.bm-orange,.bm-hover-orange:hover{color:#000!important;background-color:#ff9800!important}
+.bm-deep-orange,.bm-hover-deep-orange:hover{color:#fff!important;background-color:#ff5722!important}
+.bm-pink,.bm-hover-pink:hover{color:#fff!important;background-color:#e91e63!important}
+.bm-purple,.bm-hover-purple:hover{color:#fff!important;background-color:#9c27b0!important}
+.bm-deep-purple,.bm-hover-deep-purple:hover{color:#fff!important;background-color:#673ab7!important}
+.bm-red,.bm-hover-red:hover{color:#fff!important;background-color:#f44336!important}
+.bm-sand,.bm-hover-sand:hover{color:#000!important;background-color:#fdf5e6!important}
+.bm-teal,.bm-hover-teal:hover{color:#fff!important;background-color:#009688!important}
+.bm-yellow,.bm-hover-yellow:hover{color:#000!important;background-color:#ffeb3b!important}
+.bm-white,.bm-hover-white:hover{color:#000!important;background-color:#fff!important}
+.bm-black,.bm-hover-black:hover{color:#fff!important;background-color:#000!important}
+.bm-grey,.bm-hover-grey:hover,.bm-gray,.bm-hover-gray:hover{color:#000!important;background-color:#9e9e9e!important}
+.bm-light-grey,.bm-hover-light-grey:hover,.bm-light-gray,.bm-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+.bm-dark-grey,.bm-hover-dark-grey:hover,.bm-dark-gray,.bm-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
+.bm-pale-red,.bm-hover-pale-red:hover{color:#000!important;background-color:#ffdddd!important}
+.bm-pale-green,.bm-hover-pale-green:hover{color:#000!important;background-color:#ddffdd!important}
+.bm-pale-yellow,.bm-hover-pale-yellow:hover{color:#000!important;background-color:#ffffcc!important}
+.bm-pale-blue,.bm-hover-pale-blue:hover{color:#000!important;background-color:#ddffff!important}
+.bm-text-amber,.bm-hover-text-amber:hover{color:#ffc107!important}
+.bm-text-aqua,.bm-hover-text-aqua:hover{color:#00ffff!important}
+.bm-text-blue,.bm-hover-text-blue:hover{color:#2196F3!important}
+.bm-text-light-blue,.bm-hover-text-light-blue:hover{color:#87CEEB!important}
+.bm-text-brown,.bm-hover-text-brown:hover{color:#795548!important}
+.bm-text-cyan,.bm-hover-text-cyan:hover{color:#00bcd4!important}
+.bm-text-blue-grey,.bm-hover-text-blue-grey:hover,.bm-text-blue-gray,.bm-hover-text-blue-gray:hover{color:#607d8b!important}
+.bm-text-green,.bm-hover-text-green:hover{color:#4CAF50!important}
+.bm-text-light-green,.bm-hover-text-light-green:hover{color:#8bc34a!important}
+.bm-text-indigo,.bm-hover-text-indigo:hover{color:#3f51b5!important}
+.bm-text-khaki,.bm-hover-text-khaki:hover{color:#b4aa50!important}
+.bm-text-lime,.bm-hover-text-lime:hover{color:#cddc39!important}
+.bm-text-orange,.bm-hover-text-orange:hover{color:#ff9800!important}
+.bm-text-deep-orange,.bm-hover-text-deep-orange:hover{color:#ff5722!important}
+.bm-text-pink,.bm-hover-text-pink:hover{color:#e91e63!important}
+.bm-text-purple,.bm-hover-text-purple:hover{color:#9c27b0!important}
+.bm-text-deep-purple,.bm-hover-text-deep-purple:hover{color:#673ab7!important}
+.bm-text-red,.bm-hover-text-red:hover{color:#f44336!important}
+.bm-text-sand,.bm-hover-text-sand:hover{color:#fdf5e6!important}
+.bm-text-teal,.bm-hover-text-teal:hover{color:#009688!important}
+.bm-text-yellow,.bm-hover-text-yellow:hover{color:#d2be0e!important}
+.bm-text-white,.bm-hover-text-white:hover{color:#fff!important}
+.bm-text-black,.bm-hover-text-black:hover{color:#000!important}
+.bm-text-grey,.bm-hover-text-grey:hover,.bm-text-gray,.bm-hover-text-gray:hover{color:#757575!important}
+.bm-text-light-grey,.bm-hover-text-light-grey:hover,.bm-text-light-gray,.bm-hover-text-light-gray:hover{color:#f1f1f1!important}
+.bm-text-dark-grey,.bm-hover-text-dark-grey:hover,.bm-text-dark-gray,.bm-hover-text-dark-gray:hover{color:#3a3a3a!important}
+.bm-border-amber,.bm-hover-border-amber:hover{border-color:#ffc107!important}
+.bm-border-aqua,.bm-hover-border-aqua:hover{border-color:#00ffff!important}
+.bm-border-blue,.bm-hover-border-blue:hover{border-color:#2196F3!important}
+.bm-border-light-blue,.bm-hover-border-light-blue:hover{border-color:#87CEEB!important}
+.bm-border-brown,.bm-hover-border-brown:hover{border-color:#795548!important}
+.bm-border-cyan,.bm-hover-border-cyan:hover{border-color:#00bcd4!important}
+.bm-border-blue-grey,.bm-hover-border-blue-grey:hover,.bm-border-blue-gray,.bm-hover-border-blue-gray:hover{border-color:#607d8b!important}
+.bm-border-green,.bm-hover-border-green:hover{border-color:#4CAF50!important}
+.bm-border-light-green,.bm-hover-border-light-green:hover{border-color:#8bc34a!important}
+.bm-border-indigo,.bm-hover-border-indigo:hover{border-color:#3f51b5!important}
+.bm-border-khaki,.bm-hover-border-khaki:hover{border-color:#f0e68c!important}
+.bm-border-lime,.bm-hover-border-lime:hover{border-color:#cddc39!important}
+.bm-border-orange,.bm-hover-border-orange:hover{border-color:#ff9800!important}
+.bm-border-deep-orange,.bm-hover-border-deep-orange:hover{border-color:#ff5722!important}
+.bm-border-pink,.bm-hover-border-pink:hover{border-color:#e91e63!important}
+.bm-border-purple,.bm-hover-border-purple:hover{border-color:#9c27b0!important}
+.bm-border-deep-purple,.bm-hover-border-deep-purple:hover{border-color:#673ab7!important}
+.bm-border-red,.bm-hover-border-red:hover{border-color:#f44336!important}
+.bm-border-sand,.bm-hover-border-sand:hover{border-color:#fdf5e6!important}
+.bm-border-teal,.bm-hover-border-teal:hover{border-color:#009688!important}
+.bm-border-yellow,.bm-hover-border-yellow:hover{border-color:#ffeb3b!important}
+.bm-border-white,.bm-hover-border-white:hover{border-color:#fff!important}
+.bm-border-black,.bm-hover-border-black:hover{border-color:#000!important}
+.bm-border-grey,.bm-hover-border-grey:hover,.bm-border-gray,.bm-hover-border-gray:hover{border-color:#9e9e9e!important}
+.bm-border-light-grey,.bm-hover-border-light-grey:hover,.bm-border-light-gray,.bm-hover-border-light-gray:hover{border-color:#f1f1f1!important}
+.bm-border-dark-grey,.bm-hover-border-dark-grey:hover,.bm-border-dark-gray,.bm-hover-border-dark-gray:hover{border-color:#616161!important}
+.bm-border-pale-red,.bm-hover-border-pale-red:hover{border-color:#ffe7e7!important}.bm-border-pale-green,.bm-hover-border-pale-green:hover{border-color:#e7ffe7!important}
+.bm-border-pale-yellow,.bm-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.bm-border-pale-blue,.bm-hover-border-pale-blue:hover{border-color:#e7ffff!important}
+</style>
+
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="bm-top">
+        <div class="bm-bar bm-white bm-padding bm-card" style="letter-spacing:4px;">
+            <a href="#home" class="bm-bar-item bm-button">Bangalore Catering</a>
+            <!-- Right-sided navbar links. Hide them on small screens -->
+            <div class="bm-right bm-hide-small">
+                <a href="#about" class="bm-bar-item bm-button">About</a>
+                <a href="#menu" class="bm-bar-item bm-button">Menu</a>
+                <a href="#contact" class="bm-bar-item bm-button">Contact</a>
+            </div>
+        </div>
+    </div>
+    <!-- Header -->
+    <header class="bm-display-container bm-content bm-wide" style="max-width:1600px;min-width:500px" id="home">
+        <img class="bm-image" src="https://www.w3schools.com/w3images/hamburger.jpg" alt="Hamburger Catering" width="1600" height="800">
+        <div class="bm-display-bottomleft bm-padding-large bm-opacity">
+            <h1 class="bm-xxlarge">Le Catering</h1>
+        </div>
+    </header>
+    <!-- Page content -->
+    <div class="bm-content" style="max-width:1100px">
+        <!-- About Section -->
+        <div class="bm-row bm-padding-64" id="about">
+            <div class="bm-col m6 bm-padding-large bm-hide-small">
+                <img src="https://www.w3schools.com/w3images/tablesetting2.jpg" class="bm-round bm-image bm-opacity-min" alt="Table Setting" width="600" height="750">
+            </div>
+            <div class="bm-col m6 bm-padding-large">
+                <h1 class="bm-center">About Catering</h1><br>
+                <h5 class="bm-center">Tradition since 1889</h5>
+                <p class="bm-large">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <span class="bm-tag bm-light-grey">seasonal</span> ingredients.</p>
+                <p class="bm-large bm-text-grey bm-hide-medium">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+        <hr>
+        <!-- Menu Section -->
+        <div class="bm-row bm-padding-64" id="menu">
+            <div class="bm-col l6 bm-padding-large">
+                <h1 class="bm-center">Our Menu</h1><br>
+                <h4>Bread Basket</h4>
+                <p class="bm-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+                <h4>Honey Almond Granola with Fruits</h4>
+                <p class="bm-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+                <h4>Belgian Waffle</h4>
+                <p class="bm-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+                <h4>Scrambled eggs</h4>
+                <p class="bm-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+                <h4>Blueberry Pancakes</h4>
+                <p class="bm-text-grey">With syrup, butter and lots of berries 8.50</p>
+            </div>
+            <div class="bm-col l6 bm-padding-large">
+                <img src="https://www.w3schools.com/w3images/tablesetting.jpg" class="bm-round bm-image bm-opacity-min" alt="Menu" style="width:100%">
+            </div>
+        </div>
+        <hr>
+        <!-- Contact Section -->
+        <div class="bm-container bm-padding-64" id="contact">
+            <h1>Contact</h1><br>
+            <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+            <p class="bm-text-blue-grey bm-large"><b>Catering Service, 42nd Living St, 43043 New York, NY</b></p>
+            <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+            <form action="/action_page.php" target="_blank">
+                <p><input class="bm-input bm-padding-16" type="text" placeholder="Name" required name="Name"></p>
+                <p><input class="bm-input bm-padding-16" type="number" placeholder="How many people" required name="People"></p>
+                <p><input class="bm-input bm-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
+                <p><input class="bm-input bm-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+                <p><button class="bm-button bm-light-grey bm-section" type="submit">SEND MESSAGE</button></p>
+            </form>
+        </div>
+        <!-- End page content -->
+    </div>
+    <!-- Footer -->
+    <footer class="bm-center bm-light-grey bm-padding-32">
+        <p>Powered by Bharath Maska</p>
+    </footer>
+</body>
+
+</html>
