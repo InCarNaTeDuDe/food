@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         watch: {
             html: {
-                files: ['WebContent/**/*.html', 'WebContent/**/*.jsp']
+                files: ['WebContent/**/*.html']
                 // tasks: ['copy:main']
             }
         },
@@ -30,14 +30,14 @@ module.exports = function(grunt) {
             },
             app: {
                 files: {
-                    'WebContent/dist/style/concat.min.css': ['WebContent/css/bootstrap.css', 'WebContent/css/*.css', 'WebContent/js/font-awesome/css/*.min.css']
+                    'WebContent/dist/style/concat.min.css': ['WebContent/css/bootstrap.min.css', 'WebContent/css/*.css']
                 }
             }
         },
         uglify: {
             app: {
                 files: {
-                    'WebContent/dist/concat.js': ['WebContent/module/app.js', 'WebContent/directives/*.js', 'WebContent/filters/*.js', 'WebContent/module/**/*.js']
+                    'WebContent/dist/concat.js': ['WebContent/js/app.js', 'WebContent/plugins/*.js', 'WebContent/controllers/*.js']
                 }
             }
         },
