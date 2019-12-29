@@ -1,7 +1,7 @@
 (function() {
     "use strict";
     var app = angular.module("hangingcafe", ["ngRoute"]);
-    app.config(["$routeProvider", "$locationProvider",function($routeProvider,$locationProvider) {
+    app.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider) {
         // $locationProvider.html5Mode(true);
         $routeProvider.when("/login", {
             controller: "LoginController",
@@ -9,34 +9,34 @@
             title: 'Login'
         }).
         when("/about", {
-            controller:'AboutController',
+            controller: 'AboutController',
             templateUrl: 'views/about.html',
             title: 'Login'
         }).
-         when("/food-list", {
-            controller:'FoodListController',
+        when("/food-list", {
+            controller: 'FoodListController',
             templateUrl: 'views/food-list.html',
             title: 'Login'
         }).
-          when("/food-grid", {
-            controller:'FoodGridController',
+        when("/food-grid", {
+            controller: 'FoodGridController',
             templateUrl: 'views/food-grid.html',
             title: 'Login'
         }).
-          when("/food-detail", {
-            controller:'FoodDetailController',
+        when("/food-detail", {
+            controller: 'FoodDetailController',
             templateUrl: 'views/food-detail.html',
             title: 'Login'
         }).
-          when("/terms", {
+        when("/terms", {
             templateUrl: 'views/terms.html',
             title: 'Login'
         }).
-             when("/policy", {
+        when("/policy", {
             templateUrl: 'views/policy.html',
             title: 'Login'
         }).
-                     when("/contact", {
+        when("/contact", {
             templateUrl: 'views/contact.html',
             title: 'Login'
         }).
