@@ -5,7 +5,7 @@
         // $locationProvider.html5Mode(true);
         $routeProvider.when("/login", {
             controller: "LoginController",
-            templateUrl: 'views/login.html',
+            templateUrl: 'WebContent/views/login.html',
             title: 'Login'
         }).
         when("/about", {
