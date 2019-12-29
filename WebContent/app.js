@@ -10,34 +10,34 @@
         }).
         when("/about", {
             controller: 'AboutController',
-            templateUrl: 'views/about.html',
+            templateUrl: 'WebContent/views/about.html',
             title: 'Login'
         }).
         when("/food-list", {
             controller: 'FoodListController',
-            templateUrl: 'views/food-list.html',
+            templateUrl: 'WebContent/views/food-list.html',
             title: 'Login'
         }).
         when("/food-grid", {
             controller: 'FoodGridController',
-            templateUrl: 'views/food-grid.html',
+            templateUrl: 'WebContent/views/food-grid.html',
             title: 'Login'
         }).
         when("/food-detail", {
             controller: 'FoodDetailController',
-            templateUrl: 'views/food-detail.html',
+            templateUrl: 'WebContent/views/food-detail.html',
             title: 'Login'
         }).
         when("/terms", {
-            templateUrl: 'views/terms.html',
+            templateUrl: 'WebContent/views/terms.html',
             title: 'Login'
         }).
         when("/policy", {
-            templateUrl: 'views/policy.html',
+            templateUrl: 'WebContent/views/policy.html',
             title: 'Login'
         }).
         when("/contact", {
-            templateUrl: 'views/contact.html',
+            templateUrl: 'WebContent/views/contact.html',
             title: 'Login'
         }).
         otherwise({ redirectTo: '/login' });;
