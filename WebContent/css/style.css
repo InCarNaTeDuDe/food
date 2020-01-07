@@ -2,7 +2,7 @@ body {
 	font: 14px/24px 'Lato', Arial, Helvetica, sans-serif;
 	color: #303030;
 	background: #fff;
-	overflow-x:auto; 
+	overflow-x:hidden; 
 }
 
 /* Standard Styles Starts */
