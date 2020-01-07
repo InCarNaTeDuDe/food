@@ -2190,6 +2190,10 @@ h6 { font-size: 18px; }
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 40%;
+  text-align: center!important;
+}
+.card img{
+	width:100%;height: 400px;
 }
 
 .card:hover {
