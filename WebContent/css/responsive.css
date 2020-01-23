@@ -960,3 +960,8 @@
 	}
 
 }
+@media screen (max-width: 990px){
+	.content-login-wrap{
+		    padding: 10px 0 0 0;
+	}
+}
