@@ -7,5 +7,6 @@
         		alert("Please fill in the fields!");
         	}
         };
+        fetch('http://limitless-garden-41603.herokuapp.com/get-help').then(json=>json.json()).then(data=>console.log('From API '+data.msg));
     }]);
 })();
