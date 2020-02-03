@@ -266,11 +266,20 @@ h6 { font-size: 18px; }
 	.logo {
 		margin-top: 19px;
 		transition: all .85s ease-in-out;
+                animation: move 2.5s ease-in-out infinite;
 	}
 	.logo:hover{
 		transform: rotate(690deg);
 	}
 
+@keyframes move {
+  0%, 100% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(-45deg);
+  }
+}
 /* Top Links Styles Starts */
 
 	.top-links {
