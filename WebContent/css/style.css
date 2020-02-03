@@ -267,6 +267,9 @@ h6 { font-size: 18px; }
 		margin-top: 19px;
 		transition: all .85s ease-in-out;
                 animation: move 2.5s ease-in-out infinite;
+                -webkit-animation: move 2.5s ease-in-out infinite;
+                -moz-animation: move 2.5s ease-in-out infinite;
+                -o-animation: move 2.5s ease-in-out infinite;
 	}
 	.logo:hover{
 		transform: rotate(690deg);
@@ -274,10 +277,34 @@ h6 { font-size: 18px; }
 
 @keyframes move {
   0%, 100% {
-    transform: rotate(45deg);
+    transform: rotate(20deg);
   }
   50% {
-    transform: rotate(-45deg);
+    transform: rotate(-20deg);
+  }
+}
+@-webkit-keyframes move {
+  0%, 100% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+}
+@-moz-keyframes move {
+  0%, 100% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+}
+@-o-keyframes move {
+  0%, 100% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(-20deg);
   }
 }
 /* Top Links Styles Starts */
