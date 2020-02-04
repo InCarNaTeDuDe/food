@@ -10,13 +10,16 @@
         };
         $scope.getHelp = function(n,num){
             if(n && num){
-                            $scope.ui.toLoad = true;
-            fetch('http://limitless-garden-41603.herokuapp.com/get-help?name='+n+'&phone='+num)
-                .then(json=>json.json())
-                .then(data=>{
-                 $scope.ui.toLoad = false;
-                 console.log("from API:",data);
-            });
+                $scope.ui.toLoad = true;
+                fetch('http://limitless-garden-41603.herokuapp.com/get-help?name='+n+'&phone='+num)
+                    .then(function(json){
+                        return json.json();
+                    }).then(function(data){
+                        $scope.ui.toLoad = false;
+                        console.log("from API:",data); 
+                    }).catch(function(e){
+                        conosle.error("Error",e);
+                    });
             }
         };
     }]);
