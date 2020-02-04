@@ -2,7 +2,10 @@
     <!-- Content Login Wrap Starts -->
     <div class="content-login-wrap row">
         <div class="col-md-6 col-sm-12">
-    <form>
+            <div ng-if="ui.toLoad" class="loader-wrapper">
+                <div class="loader"></div>
+            </div>
+        <form ng-if="!ui.toLoad">
             <!-- Nested Row Starts -->
             <div style="color:#FFF !important;background:#000;padding-top: 10px;display: flex;flex-direction: column;">
                 <h6 style="margin:12px;" class="text-center"><b>Please Provide Your Information,If any queries...</b></h6>
