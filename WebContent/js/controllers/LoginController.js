@@ -1,6 +1,6 @@
 (function() {
     "use strict";
-    angular.module("hangingcafe").controller('LoginController', ['$scope', function($scope) {
+    angular.module("hangingcafe").controller('LoginController', ['$scope','$http', function($scope,$http) {
         $scope.ui={
             content: 'form'
         };
@@ -12,13 +12,9 @@
         $scope.getHelp = function(n,num){
             if(n && num){
                 $scope.ui.content = 'loader';
-                fetch('http://limitless-garden-41603.herokuapp.com/get-help?name='+n+'&phone='+num)
-                    .then(function(json){
-                        return json.json();
-                    }).then(function(data){
-                        setTimeout(function(){
-                            $scope.ui.content = 'form';
-                        });
+                $http.get('http://limitless-garden-41603.herokuapp.com/get-help?name='+n+'&phone='+num)
+                    .then(function(data){
+                        $scope.ui.content = 'form';
                         console.log("from API:",data); 
                     }).catch(function(e){
                         conosle.error("Error",e);
