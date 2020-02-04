@@ -1,7 +1,6 @@
 (function() {
     "use strict";
     angular.module("hangingcafe").controller('LoginController', ['$scope', function($scope) {
-        $scope.text = "Hello login please!";
         $scope.ui={
             content: 'form'
         };
@@ -17,7 +16,9 @@
                     .then(function(json){
                         return json.json();
                     }).then(function(data){
-                        $scope.ui.content = 'form';
+                        setTimeout(function(){
+                            $scope.ui.content = 'form';
+                        });
                         console.log("from API:",data); 
                     }).catch(function(e){
                         conosle.error("Error",e);
