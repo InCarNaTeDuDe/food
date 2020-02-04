@@ -13,9 +13,9 @@
             if(n && num){
                 $scope.ui.content = 'loader';
                 $http.get('http://limitless-garden-41603.herokuapp.com/get-help?name='+n+'&phone='+num)
-                    .then(function(data){
+                    .then(function(response){
                         $scope.ui.content = 'form';
-                        console.log("from API:",data); 
+                        alert("Thank you "+response.data.name+" for contacting ,Will assist you shortly!")
                     }).catch(function(e){
                         conosle.error("Error",e);
                     });
