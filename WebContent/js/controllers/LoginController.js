@@ -10,11 +10,11 @@
         	}
         };
         
-        window.indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
-        if (!window.indexedDB) {
+        window.appDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
+        if (!window.appDB) {
             console.error("DB is not supported!");
         }
-        var request = window.indexedDB.open("hangingcageDB", 1),
+        var request = window.appDB.open("hangingcageDB", 1),
             db, tx, store, index;
         
         request.onupgradeneeded = function (e) {
