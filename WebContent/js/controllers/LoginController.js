@@ -36,19 +36,19 @@
                 console.log("Error :" + e.target.errorCode);
             };
 
-            store.put({ id: 1, helpText: "Birthday cake order", name: "Bharath", number: "1221648" });
-            store.put({ id: 2, helpText: "Table Booking", name: "Chandu", number: "4885155555" });
+//             store.put({ id: 1, helpText: "Birthday cake order", name: "Bharath", number: "1221648" });
+//             store.put({ id: 2, helpText: "Table Booking", name: "Chandu", number: "4885155555" });
 
-            var all = store.getAll();
-            all.onsuccess = function () {
-                console.log(all.result)
-            }
+//             var all = store.getAll();
+//             all.onsuccess = function () {
+//                 console.log(all.result)
+//             }
 
-            var query = store.get(1);
-            query.onsuccess = function () {
-                console.log(query.result);
-                console.log(query.result.helpText);
-            };
+//             var query = store.get(1);
+//             query.onsuccess = function () {
+//                 console.log(query.result);
+//                 console.log(query.result.helpText);
+//             };
 
 //             tx.oncomplete = function () {
 //                 db.close();
