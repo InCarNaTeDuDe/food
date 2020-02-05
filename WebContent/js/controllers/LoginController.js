@@ -62,10 +62,8 @@
                             db = request.result;
                             tx = db.transaction("help", "readwrite");
                             store = tx.objectStore("help");
+                            store.put(obj);
                             index = store.index("helpText");
-                        };
-                        tx.oncomplete = function () {
-                            db.close();
                         };
         }
         
