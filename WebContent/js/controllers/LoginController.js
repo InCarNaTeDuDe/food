@@ -75,7 +75,7 @@
                         $scope.ui.content = 'form';
                         alert("Thank you "+response.data.name+" for contacting ,Will assist you shortly!");
                         console.log("opening db...");    
-                        openDbAndInsertData({helpText:response.data.name,number:response.data.phone});
+                        openDbAndInsertData({id:1,helpText:response.data.name,number:response.data.phone});
                     }).catch(function(e){
                         console.error("Error",e);
                     });
