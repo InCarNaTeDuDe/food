@@ -50,9 +50,9 @@
                 console.log(query.result.helpText);
             };
 
-            tx.oncomplete = function () {
-                db.close();
-            };
+//             tx.oncomplete = function () {
+//                 db.close();
+//             };
         };
 
         
@@ -66,6 +66,9 @@
                         alert("Thank you "+response.data.name+" for contacting ,Will assist you shortly!");
                         console.log("Fetching data...");    
                         console.log(store.getAll());
+                        tx.oncomplete = function () {
+                            db.close();
+                        };
                     }).catch(function(e){
                         console.error("Error",e);
                     });
