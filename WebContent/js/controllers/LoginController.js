@@ -67,7 +67,7 @@
                         console.log("Fetching data...");    
                         console.log(store.getAll());
                     }).catch(function(e){
-                        conosle.error("Error",e);
+                        console.error("Error",e);
                     });
             }
         };
