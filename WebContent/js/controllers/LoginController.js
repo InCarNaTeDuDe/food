@@ -62,7 +62,10 @@
                             db = request.result;
                             tx = db.transaction("help", "readwrite");
                             store = tx.objectStore("help");
-                            store.put(obj);
+                            var qry = store.put(obj);
+                            qry.onsucess = function(){
+                                console.log("Query Inserted successfully!");
+                            };
                             index = store.index("helpText");
                         };
         }
