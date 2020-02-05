@@ -55,6 +55,19 @@
 //             };
         };
 
+        function openDbAndInsertData(obj){
+            var request = window.appDB.open("hangingcageDB", 1),
+                            db, tx, store, index;
+                        request.onsuccess = function (e) {
+                            db = request.result;
+                            tx = db.transaction("help", "readwrite");
+                            store = tx.objectStore("help");
+                            index = store.index("helpText");
+                        };
+                        tx.oncomplete = function () {
+                            db.close();
+                        };
+        }
         
         $scope.getHelp = function(n,num){
             if(n && num){
@@ -62,13 +75,9 @@
                 $http.get('http://limitless-garden-41603.herokuapp.com/get-help?name='+n+'&phone='+num)
                     .then(function(response){
                         $scope.ui.content = 'form';
-                        store.put({helpText:response.data.name,number:response.data.phone});
                         alert("Thank you "+response.data.name+" for contacting ,Will assist you shortly!");
-                        console.log("Fetching data...");    
-                        console.log(store.getAll());
-                        tx.oncomplete = function () {
-                            db.close();
-                        };
+                        console.log("opening db...");    
+                        openDbAndInsertData({helpText:response.data.name,number:response.data.phone});
                     }).catch(function(e){
                         console.error("Error",e);
                     });
