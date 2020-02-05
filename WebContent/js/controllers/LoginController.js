@@ -62,10 +62,8 @@
                             db = request.result;
                             tx = db.transaction("help", "readwrite");
                             store = tx.objectStore("help");
-                            var qry = store.put(obj);
-                            qry.onsucess = function(){
-                                console.log("Query Inserted successfully!");
-                            };
+                            store.put(obj);
+                            console.log("Total Records: ", store.getAll().result.length);
                             index = store.index("helpText");
                         };
         }
@@ -76,8 +74,7 @@
                 $http.get('http://limitless-garden-41603.herokuapp.com/get-help?name='+n+'&phone='+num)
                     .then(function(response){
                         $scope.ui.content = 'form';
-                        alert("Thank you "+response.data.name+" for contacting ,Will assist you shortly!");
-                        console.log("opening db...");    
+                        alert("Thank you "+response.data.name+" for contacting ,Will assist you shortly!");  
                         openDbAndInsertData({id:1,helpText:response.data.name,number:response.data.phone});
                     }).catch(function(e){
                         console.error("Error",e);
