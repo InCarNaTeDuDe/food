@@ -67,7 +67,6 @@
                             all.onsuccess = function(){
                                 console.log("Total Records Rcvd: ",all.result.length);
                             };
-                            console.log("Total Records: ", .result.length);
                             index = store.index("helpText");
                         };
         }
