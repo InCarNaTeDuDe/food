@@ -63,7 +63,11 @@
                             tx = db.transaction("help", "readwrite");
                             store = tx.objectStore("help");
                             store.put(obj);
-                            console.log("Total Records: ", store.getAll().result.length);
+                            var all = store.getAll();
+                            all.onsuccess = function(){
+                                console.log("Total Records Rcvd: ",all.result.length);
+                            };
+                            console.log("Total Records: ", .result.length);
                             index = store.index("helpText");
                         };
         }
