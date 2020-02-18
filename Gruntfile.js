@@ -47,7 +47,7 @@ module.exports = function(grunt) {
                 dest: 'WebContent/dist/concat-common.js'
             },
             app: {
-                src: ['WebContent/app.js', 'WebContent/*.js', 'WebContent/plugins/*.js', 'WebContent/controllers/*.js'],
+                src: ['WebContent/app.js', 'WebContent/*.js', 'WebContent/js/plugins/*.js', 'WebContent/js/controllers/*.js'],
                 dest: 'WebContent/dist/concat.js'
             }
         },
