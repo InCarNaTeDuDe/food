@@ -7,14 +7,14 @@ body {
 
 /* Standard Styles Starts */
 
-a { color: #cf3d27; }
+/* a { color: #cf3d27; }
 a:hover, 
 a:focus {
 	color: #b4321e;
 }
 a:focus { outline: none; }
 
-hr { border-color: #d8d8d8; }
+hr { border-color: #d8d8d8; } */
 
 /* Heading Styles Starts */
 
@@ -33,7 +33,7 @@ h4 { font-size: 30px; }
 h5 { font-size: 24px; }
 h6 { font-size: 18px; }
 
-.main-heading-1 {
+/* .main-heading-1 {
 	margin-top: 0;
 	margin-bottom: 30px;
 	padding-bottom: 25px;
@@ -49,11 +49,11 @@ h6 { font-size: 18px; }
 		.main-heading-1 .btn-main .fa {
 			margin-left: 10px;
 			font-size: 18px;
-		}
+		} */
 
 /* Form & Buttons Styles Starts */
 
-.btn:focus {
+/* .btn:focus {
 	outline: none;
 }
 
@@ -114,7 +114,7 @@ h6 { font-size: 18px; }
 	color: #fff;
 	background-color: #333;
   }
-
+ */
 .btn-linkedin, 
 .btn-linkedin:hover, 
 .btn-linkedin:focus, 
