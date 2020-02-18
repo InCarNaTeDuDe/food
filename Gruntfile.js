@@ -37,7 +37,7 @@ module.exports = function (grunt) {
         uglify: {
             app: {
                 files: {
-                    'WebContent/dist/concat.js': ['WebContent/app.js', 'WebContent/**/*.js', 'WebContent/js/*.js']
+                    'WebContent/dist/concat.js': ['WebContent/js/jquery-3.3.1.min.js','WebContent/js/bootstrap.min.js' ,'WebContent/app.js', 'WebContent/js/**/*.js', 'WebContent/js/*.js']
                 }
             }
         },
@@ -47,7 +47,7 @@ module.exports = function (grunt) {
                 dest: 'WebContent/dist/concat-common.js'
             },
             app: {
-                'WebContent/dist/concat.js': ['WebContent/app.js', 'WebContent/**/*.js', 'WebContent/js/*.js'],
+                'WebContent/dist/concat.js': ['WebContent/js/jquery-3.3.1.min.js','WebContent/js/bootstrap.min.js' ,'WebContent/app.js', 'WebContent/js/**/*.js', 'WebContent/js/*.js'],
                 dest: 'WebContent/dist/concat.js'
             }
         },
