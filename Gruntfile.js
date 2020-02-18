@@ -1,5 +1,5 @@
 "use strict";
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
     grunt.initConfig({
         watch: {
@@ -37,7 +37,7 @@ module.exports = function(grunt) {
         uglify: {
             app: {
                 files: {
-                    'WebContent/dist/concat.js': ['WebContent/app.js', 'WebContent/*.js', 'WebContent/plugins/*.js', 'WebContent/controllers/*.js']
+                    'WebContent/dist/concat.js': ['WebContent/app.js', 'WebContent/**/*.js', 'WebContent/js/*.js']
                 }
             }
         },
@@ -47,7 +47,7 @@ module.exports = function(grunt) {
                 dest: 'WebContent/dist/concat-common.js'
             },
             app: {
-                src: ['WebContent/app.js', 'WebContent/*.js', 'WebContent/js/plugins/*.js', 'WebContent/js/controllers/*.js'],
+                'WebContent/dist/concat.js': ['WebContent/app.js', 'WebContent/**/*.js', 'WebContent/js/*.js'],
                 dest: 'WebContent/dist/concat.js'
             }
         },
@@ -73,9 +73,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-    grunt.registerTask('serve', '', function() {
+    grunt.registerTask('serve', '', function () {
         grunt.task.run(['connect:server', 'watch']);
     });
 
-    grunt.registerTask('concatapp', 'concat app', ['cssmin:app', 'uglify:app', 'concat:common' /*,'copy:main'*/ ]);
+    grunt.registerTask('concatapp', 'concat app', ['cssmin:app', 'uglify:app', 'concat:common' /*,'copy:main'*/]);
 }
