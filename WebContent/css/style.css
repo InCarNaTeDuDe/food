@@ -5,19 +5,6 @@ body {
 	overflow-x:hidden; 
 }
 
-/* Standard Styles Starts */
-
-/* a { color: #cf3d27; }
-a:hover, 
-a:focus {
-	color: #b4321e;
-}
-a:focus { outline: none; }
-
-hr { border-color: #d8d8d8; } */
-
-/* Heading Styles Starts */
-
 h1, 
 h2, 
 h3, 
@@ -33,88 +20,6 @@ h4 { font-size: 30px; }
 h5 { font-size: 24px; }
 h6 { font-size: 18px; }
 
-/* .main-heading-1 {
-	margin-top: 0;
-	margin-bottom: 30px;
-	padding-bottom: 25px;
-	color: #cf3d27;
-	border-bottom: 1px solid #d8d8d8;
-}
-	.main-heading-1 .btn-main {
-		margin-top: -5px;
-		margin-left: 15px;
-		padding: 6px 20px;
-		font-size: 16px;
-	}
-		.main-heading-1 .btn-main .fa {
-			margin-left: 10px;
-			font-size: 18px;
-		} */
-
-/* Form & Buttons Styles Starts */
-
-/* .btn:focus {
-	outline: none;
-}
-
-.btn-default {
-	color: #333;
-	background-color: #fff;
-	border-color: #ccc;
-  }
-  .btn-default:focus,
-  .btn-default.focus {
-	color: #333;
-	background-color: #e6e6e6;
-	border-color: #8c8c8c;
-  }
-  .btn-default:hover {
-	color: #333;
-	background-color: #e6e6e6;
-	border-color: #adadad;
-  }
-  .btn-default:active,
-  .btn-default.active,
-  .open > .dropdown-toggle.btn-default {
-	color: #333;
-	background-color: #e6e6e6;
-	border-color: #adadad;
-  }
-  .btn-default:active:hover,
-  .btn-default.active:hover,
-  .open > .dropdown-toggle.btn-default:hover,
-  .btn-default:active:focus,
-  .btn-default.active:focus,
-  .open > .dropdown-toggle.btn-default:focus,
-  .btn-default:active.focus,
-  .btn-default.active.focus,
-  .open > .dropdown-toggle.btn-default.focus {
-	color: #333;
-	background-color: #d4d4d4;
-	border-color: #8c8c8c;
-  }
-  .btn-default:active,
-  .btn-default.active,
-  .open > .dropdown-toggle.btn-default {
-	background-image: none;
-  }
-  .btn-default.disabled:hover,
-  .btn-default[disabled]:hover,
-  fieldset[disabled] .btn-default:hover,
-  .btn-default.disabled:focus,
-  .btn-default[disabled]:focus,
-  fieldset[disabled] .btn-default:focus,
-  .btn-default.disabled.focus,
-  .btn-default[disabled].focus,
-  fieldset[disabled] .btn-default.focus {
-	background-color: #fff;
-	border-color: #ccc;
-  }
-  .btn-default .badge {
-	color: #fff;
-	background-color: #333;
-  }
- */
 .btn-linkedin, 
 .btn-linkedin:hover, 
 .btn-linkedin:focus, 
