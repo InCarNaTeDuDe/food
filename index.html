@@ -105,6 +105,24 @@
     <script src="WebContent/js/controllers/AboutController.js"></script>
 <!--     <script src="WebContent/dist/concat-common.js"></script>
     <script src="WebContent/dist/concat.js"></script> -->
+    <script>
+              if ('serviceWorker' in navigator) {
+          window.addEventListener("load", () => {
+            navigator.serviceWorker.register(
+              // fetch("http://" + location.host + "/sw").then(file => {
+              //   console.log("Rcvd file", file)
+              //   return file;
+              // }).catch(e => console.log("Err in Rcvng file"))
+              "./sw.js"
+            )
+              .then((reg) => {
+                console.log("Reg", reg);
+              }).catch(e => console.log("Err:", e))
+          });
+        } else {
+          console.log("Sw not Supported!");
+        }
+    </script>
 </body>
 
 </html>
